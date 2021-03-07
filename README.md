@@ -1,2 +1,2 @@
-# Leetcode
-Leetcode programs for tf153
+# LeetCode
+ LeetCode tf153 data
