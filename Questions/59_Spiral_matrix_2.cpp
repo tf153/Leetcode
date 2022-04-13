@@ -6,19 +6,18 @@ public:
         while( k <= n * n )
         {
             int j = i;
-                // four steps
-            while( j < n - i )             // 1. horizonal, left to right
+            while( j < n - i )
                 ret[i][j++] = k++;
             j = i + 1;
-            while( j < n - i )             // 2. vertical, top to bottom
+            while( j < n - i )
                 ret[j++][n-i-1] = k++;
             j = n - i - 2;
-            while( j > i )                  // 3. horizonal, right to left 
+            while( j > i )
                 ret[n-i-1][j--] = k++;
             j = n - i - 1;
-            while( j > i )                  // 4. vertical, bottom to  top 
+            while( j > i )
                 ret[j--][i] = k++;
-            i++;      // next loop
+            i++;
         }
         return ret;
     }
